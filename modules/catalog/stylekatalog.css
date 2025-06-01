@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    background: linear-gradient(90deg, #356859, #37966f); 
+    color: #fff;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover, header nav ul li a.active {
+    color: #d1e8e2;
+}
+
+@media (min-width: 768px) {
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header nav ul {
+        margin-top: 0;
+    }
+}
+
+main {
+    padding: 40px 0;
+}
+
+main h2 {
+    margin-bottom: 20px;
+    color: #356859;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #356859;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #295a4e;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: #356859;
+    outline: none;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #356859;
+}
+
+footer {
+    background-color: #356859;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-4 {
+    margin-top: 20px;
+}
+
+.mb-4 {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+    
+    header nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
