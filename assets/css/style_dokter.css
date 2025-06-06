@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 2px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white; /* Warna putih untuk latar tabel */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.table th, .table td {
+    padding: 10px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+
+}
+.table th {
+    background-color: #38761d; /* Hijau butek untuk header tabel */
+    color: white; /* Warna putih untuk teks header */
+}
+
+table th {
+    background-color: #38761d;
+    color: white;
+    text-align: left;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #d9ead3; /* Hijau muda saat hover */
+}
+
+.edit,.delete {
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #6aa84f;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.edit {
+    background-color: #6aa84f; /* Hijau terang */
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.edit:hover {
+    background-color: #38761d; /
+}
+   
+
+.delete {
+    background: #cc0000;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.delete:hover {
+    background-color: #990000; /
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.error {
+    color: red;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #ffebee;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background: #6aa84f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+a {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Warna latar belakang abu-abu terang */
+    color: #333; /* Warna teks default */
+}
