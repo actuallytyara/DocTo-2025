@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+    color: #333;
+}
+
+
+.form-edit-box {
+    max-width: 480px;
+    margin: 100px auto;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.form-edit-box-username,
+.form-edit-box-password,
+.form-edit-box-email,
+.form-edit-box-level {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-edit-box label {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #444;
+}
+
+
+.form-edit-box input[type="text"],
+.form-edit-box input[type="password"],
+.form-edit-box input[type="email"] {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.form-edit-box input[type="text"]:focus,
+.form-edit-box input[type="password"]:focus,
+.form-edit-box input[type="email"]:focus {
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+/* Radio Button Styling */
+.form-edit-box-level {
+    margin-bottom: 20px;
+}
+
+.form-edit-box-level input[type="radio"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.form-edit-box-level label {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+
+.form-edit-box-button {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.form-edit-box-button input[type="submit"] {
+    padding: 10px 24px;
+    background-color: #37966f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.form-edit-box-button input[type="submit"]:hover {
+    background-color: #2f7d5c;
+}
+
+
+@media screen and (max-width: 576px) {
+    .form-edit-box {
+        padding: 20px;
+        margin: 60px auto;
+    }
+    
+    .form-edit-box label {
+        width: 100%;
+        display: block;
+    }
+}
