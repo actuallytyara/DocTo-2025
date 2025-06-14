@@ -1,0 +1,180 @@
+   .table-container {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+            overflow-x: auto;
+        }
+        
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+            min-width: 900px;
+        }
+        
+        .table th, .table td {
+            border: 1px solid #e0e0e0;
+            padding: 8px;
+            text-align: left;
+            vertical-align: middle;
+            font-size: 0.85rem;
+        }
+        
+        .table th {
+            background: #37705D;
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .table tr:hover {
+            background-color: #e8f5e8;
+            transition: background-color 0.3s ease;
+        }
+        
+        .user-image {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 2px solid #37705D;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .no-image {
+            color: #999;
+            font-style: italic;
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        .role-user {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: inline-block;
+        }
+        
+        .editButton, .deleteButton {
+            padding: 6px 10px;
+            margin: 1px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            transition: all 0.3s ease;
+        }
+        
+        .editButton {
+            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+            color: white;
+        }
+        
+        .deleteButton {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+        }
+        
+        .editButton:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
+        }
+        
+        .deleteButton:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);
+        }
+        
+        .add-user-container {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .add-user-button {
+            background: linear-gradient(135deg, #37705D 0%, #4a8b6f 100%);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .add-user-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(55, 112, 93, 0.4);
+            text-decoration: none;
+            color: white;
+        }
+        
+        .password-mask {
+            font-family: monospace;
+            letter-spacing: 2px;
+            color: #666;
+        }
+        
+        .image-info {
+            font-size: 10px;
+            color: #666;
+            margin-top: 4px;
+            text-align: center;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 2px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        @media (max-width: 768px) {
+            .table-container {
+                overflow-x: auto;
+                padding: 0.5rem;
+            }
+            
+            .table {
+                min-width: 700px;
+                font-size: 0.75rem;
+            }
+            
+            .table th, .table td {
+                padding: 4px;
+                font-size: 0.75rem;
+            }
+            
+            .user-image {
+                width: 30px;
+                height: 30px;
+            }
+            
+            .editButton, .deleteButton {
+                padding: 4px 8px;
+                font-size: 10px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+        }
